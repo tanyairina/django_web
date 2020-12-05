@@ -1,2 +1,2 @@
 # django_web
-semi-restful tv_shows project, fullstack django webapp deployed in production http://18.219.176.122/shows/
+http://18.219.176.122/shows/ semi-restful tv_shows project, fullstack django webapp deployed in production for practice 
