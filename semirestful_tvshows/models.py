@@ -7,6 +7,8 @@ class ShowManager(models.Manager):
         errors = {}
         if len(postData['title']) == 0 or len(postData['title']) < 3:
             errors['title'] = "Show Title should be at least 2 characters"
+        if ['title'] == ['title']: 
+            errors['course_name'] = "The show tile you enetered is not unique."
         if len(postData['network']) == 0 or len(postData['network']) < 3:
             errors['network'] = "Show Network should be at least 3 characters"
         if len(postData['description']) != 0 and len(postData['description']) < 10:

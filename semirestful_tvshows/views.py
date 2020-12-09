@@ -13,6 +13,8 @@ def new(request):
     return render(request,'addnew.html')
 
 def create(request):
+    if request.method == 'GET':
+        return redirect('/create')
     errors = Show.objects.validator(request.POST)
     if len(errors) > 0:
         for key, value in errors.items():
